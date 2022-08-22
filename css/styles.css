@@ -17,17 +17,17 @@ body {
   color: #0b132a;
   display: block;
   font-weight: 500;
-  font-size: 35pt;
+  font-size: 35px;
 }
 
 .title--emphisise {
-  font-size: 50pt;
+  font-size: 50px;
 }
 
 .paragraph {
   color: #4f5665;
-  font-size: 16pt;
-  line-height: 28pt;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 ul {
@@ -44,9 +44,8 @@ ul {
 }
 
 .logo__image {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 4px;
+  vertical-align: top;
+  padding: 4px;
   height: 40px;
   width: 40px;
 }
@@ -108,13 +107,14 @@ ul {
 }
 
 .button {
+  font-family: inherit;
   border: none;
   display: inline-block;
   width: 300px;
   height: 80px;
   padding: 10px;
   text-align: center;
-  font-size: 16pt;
+  font-size: 16px;
   font-weight: 600;
   color: #fff;
   border-radius: 10px;
@@ -132,18 +132,27 @@ ul {
 
 .benefit-list {
   padding: 0;
+  margin: 25px;
   list-style-image: url("../images/list-decoration.svg");
 }
 
+.benefit-list__item__text {
+  display: inline-block;
+  line-height: 20px;
+  margin-left: 8px;
+  vertical-align: top;
+}
+
 .benefit-list__item {
-  padding: 20px 0;
-  list-style-position: inside;
-  font-size: 14pt;
+  margin-bottom: 20px;
+  height: 20px;
+  font-size: 14px;
+  padding: 3px;
   color: #4f5665;
 }
 
 .center {
-  padding: 0 32%;
+  padding: 0 10%;
   text-align: center;
 }
 

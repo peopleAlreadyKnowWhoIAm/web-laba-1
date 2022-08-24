@@ -13,70 +13,96 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400..700"
     />
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
 
   <body>
     <header class="header">
-      <div class="logo">
-        <img
-          class="inline-block logo__image"
-          src="images/logo.svg"
-          alt="logo"
-        />
-        <p class="inline-block logo__title no-margin">
-          Lasles<b class="bold">VPN</b>
-        </p>
+      <div class="header__logo-and-button">
+        <div class="logo inline-block">
+          <img
+            class="inline-block logo__image"
+            src="images/logo.svg"
+            alt="logo"
+          />
+          <p class="inline-block logo__title no-margin">
+            Lasles<b class="bold">VPN</b>
+          </p>
+        </div>
+        <button
+          class="button header__button--hamburger"
+          onclick="toggleHamburger()"
+        ><div class="menu__symbol">
+          <span class="menu__symbol__line menu__symbol__line--up"></span>
+          <span class="menu__symbol__line menu__symbol__line--mid"></span>
+          <span class="menu__symbol__line menu__symbol__line--bot"></span>
+        </div></button>
       </div>
+      <div class="hamburger" id="hamburger">
+        <nav class="pages">
+          <ul>
+            <li class="pages__item">About</li>
+            <li class="pages__item">Features</li>
+            <li class="pages__item">Pricing</li>
+            <li class="pages__item">Testimonials</li>
+            <li class="pages__item">Help</li>
+          </ul>
+        </nav>
 
-      <nav>
-        <ul class="pages">
-          <li class="inline-block pages__item">About</li>
-          <li class="inline-block pages__item">Features</li>
-          <li class="inline-block pages__item">Pricing</li>
-          <li class="inline-block pages__item">Testimonials</li>
-          <li class="inline-block pages__item">Help</li>
-        </ul>
-      </nav>
-
-      <div class="sign">
-        <button class="inline-block button">Sign In</button>
-        <button class="inline-block button button--outlined">Sign Up</button>
+        <div class="sign">
+          <button class="inline-block button">Sign In</button>
+          <button class="inline-block button button--outlined">Sign Up</button>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="section section--divided">
-        <div class="section--divided__child">
-          <h1 class="title title--emphisise">
-            Want anything to be <br> easy with <b class="bold">LaslesVPN.</b>
-          </h1>
-          <p class="paragraph">
-            Provide a network for all your needs with ease and fun using
-            <b class="bold--low">LaslesVPN</b><br> discover interesting features
-            from us.
-          </p>
-          <button class="button button--large button--margin-top">Get started</button>
+      <!-- Because its up and never could appear from down -->
+      <section class="section section--divided section--divided__reversed">
+        <div class="section--divided__child column--centered">
+          <div>
+            <h1 class="title title--emphisise">
+              Want anything to be <br />
+              easy with <b class="bold">LaslesVPN.</b>
+            </h1>
+            hamburger__item
+            <p class="paragraph">
+              hamburger__item hamburger__item hamburger__item hamburger__item
+              hamburger_hamburger--down Provide a network for all your needs
+              with ease and fun using <b class="bold--low">LaslesVPN</b><br />
+              discover interesting features from us.
+            </p>
+            <button class="button button--large button--margin-top">
+              Get started
+            </button>
+          </div>
         </div>
-        <img
-          class="section--divided__child"
-          src="images/Illustration1.svg"
-          alt="intrested man"
-        />
+        <div class="section--divided__child">
+          <img
+            class="img-in-container"
+            src="images/Illustration1.svg"
+            alt="intrested man"
+          />
+        </div>
       </section>
 
-      <section class="section section--divided">
-        <img
-          class="section--divided__child"
-          src="images/Illustration2.svg"
-          alt="saluting man"
-        />
+      <section class="section section--divided transparent">
         <div class="section--divided__child">
-          <div class="section--divided__child__padding">
-            <h2 class="title">We Provide Many <br> Features You Can Use</h2>
+          <img
+            class="img-in-container"
+            src="images/Illustration2.svg"
+            alt="saluting man"
+          />
+        </div>
+        <div class="section--divided__child column--centered">
+          <div>
+            <h2 class="title">
+              We Provide Many <br />
+              Features You Can Use
+            </h2>
             <p class="paragraph">
-              You can explore the features that we provide with fun <br> and have
-              their own functions each feature.
+              You can explore the features that we provide with fun <br />
+              and have their own functions each feature.
             </p>
 
             <ul class="benefit-list">
@@ -103,14 +129,14 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section transparent">
         <h2 class="title center">
-          Trusted by Thousands <br>
+          Trusted by Thousands <br />
           of Happy Customer
         </h2>
         <p class="paragraph center">
-          These are the stories of our customers who have joined us with <br>great
-          pleasure when using this crazy feature.
+          These are the stories of our customers who have joined us with
+          <br />great pleasure when using this crazy feature.
         </p>
         <div class="section__rates">
           <div class="card">
@@ -139,7 +165,7 @@
               </div>
             </div>
             <div class="card__comment-box">
-              <p class="paragraph paragraph--comment">
+              <p class="paragraph card__paragraph">
                 “Wow... I am very happy to use this VPN, it turned out to be
                 more than my expectations and so far there have been no
                 problems.
@@ -172,7 +198,7 @@
               </div>
             </div>
             <div class="card__comment-box">
-              <p class="paragraph paragraph--comment">
+              <p class="paragraph card__paragraph">
                 “I like it because I like to travel far and still can connect
                 with high speed.”.
               </p>
@@ -204,7 +230,7 @@
               </div>
             </div>
             <div class="card__comment-box">
-              <p class="paragraph paragraph--comment">
+              <p class="paragraph card__paragraph">
                 “This is very unusual for my business that currently requires a
                 virtual private network that has high security.”.
               </p>
@@ -213,18 +239,17 @@
         </div>
       </section>
 
-      <section class="section section--divided section--subsribe">
-        <div class="section--subsribe__text-division">
+      <section class="section section--divided section--subsribe transparent">
+        <div>
           <h2 class="title no-margin">
-            Subscribe Now for <br> Get Special Features!
+            Subscribe Now for <br />
+            Get Special Features!
           </h2>
           <p class="paragraph no-margin">
             Let's subscribe with us and find the fun.
           </p>
-        </div>
-        <div class="section--subsribe__button-division">
+          </div>
           <button class="button button--large">Subscribe now</button>
-        </div>
       </section>
     </main>
 
@@ -267,4 +292,34 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    function toggleHamburger() {
+      document.getElementById("hamburger").classList.toggle("hamburger--clipped");
+      const elements = document.getElementsByClassName("menu__symbol__line");
+      for (var i = 0; elements.length > i; i++) {
+        elements[i].classList.toggle("menu__symbol__line--open");
+      }
+    }
+
+    function revealAnimation() {
+      const windowHeignt = window.innerHeight;
+      const elementVisible = 150;
+
+      const sections = document.getElementsByClassName('section');
+
+      for(let i = 0; i < sections.length; i++){
+        let sectionPositionTop = sections[i].getBoundingClientRect().top;
+
+        if(windowHeignt - elementVisible > sectionPositionTop) {
+          sections[i].classList.add('section--active');
+        } else {
+          sections[i].classList.remove('section--active');
+        }
+      }
+
+    }
+
+    window.addEventListener("scroll",revealAnimation);
+  </script>
 </html>

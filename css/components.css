@@ -1,0 +1,54 @@
+.button {
+  font-family: inherit;
+  border: none;
+  padding: 0;
+  background-color: #FFF0;
+  font-size: 16px;
+  color: #0b132a;
+  font-weight: 500;
+  width: 150px;
+  height: 48px;
+  margin: 2px;
+}
+
+.button--outlined {
+  color:#f53855;
+  border: 1px solid #f53855;
+  border-radius: 24px;
+}
+
+.button--large {
+  width: 250px;
+  height: 60px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #f53838;
+  box-shadow: 0 20px 60px -20px #f53838;
+
+}
+
+.button--margin-top {
+  margin-top: 50px;
+}
+
+
+.logo__image {
+  vertical-align: top;
+  padding: 4px;
+  height: 40px;
+  width: 40px;
+}
+
+.logo__title {
+  line-height: 48px;
+  color: #0b132a;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.paragraph {
+  color: #4f5665;
+  font-size: 16px;
+  line-height: 30px;
+}

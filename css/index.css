@@ -1,0 +1,17 @@
+@import url("utils.css");
+@import url("comment-card.css");
+@import url("components.css");
+@import url("footer.css");
+@import url("header.css");
+@import url("lists.css");
+@import url("sections.css");
+
+body {
+  font-family: Rubik, Arial, sans-serif;
+}
+
+@media screen and (min-width: 1050px) {
+  main {
+    margin: 0 10%;
+  }
+}

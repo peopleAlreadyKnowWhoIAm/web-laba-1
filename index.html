@@ -32,20 +32,24 @@
         <button
           class="button header__button--hamburger"
           onclick="toggleHamburger()"
-        ><div class="menu__symbol">
-          <span class="menu__symbol__line menu__symbol__line--up"></span>
-          <span class="menu__symbol__line menu__symbol__line--mid"></span>
-          <span class="menu__symbol__line menu__symbol__line--bot"></span>
-        </div></button>
+        >
+          <div class="menu__symbol">
+            <span class="menu__symbol__line menu__symbol__line--up"></span>
+            <span class="menu__symbol__line menu__symbol__line--mid"></span>
+            <span class="menu__symbol__line menu__symbol__line--bot"></span>
+          </div>
+        </button>
       </div>
       <div class="hamburger" id="hamburger">
-        <nav class="pages">
-          <ul>
-            <li class="pages__item">About</li>
-            <li class="pages__item">Features</li>
-            <li class="pages__item">Pricing</li>
-            <li class="pages__item">Testimonials</li>
-            <li class="pages__item">Help</li>
+        <nav>
+          <ul class="pages">
+            <li class="inline-block pages__item"><a href="#">About</a></li>
+            <li class="inline-block pages__item"><a href="#">Features</a></li>
+            <li class="inline-block pages__item"><a href="#">Pricing</a></li>
+            <li class="inline-block pages__item">
+              <a href="#">Testimonials</a>
+            </li>
+            <li class="inline-block pages__item"><a href="#">Help</a></li>
           </ul>
         </nav>
 
@@ -58,7 +62,9 @@
 
     <main>
       <!-- Because its up and never could appear from down -->
-      <section class="section section--divided section--divided__reversed section--active">
+      <section
+        class="section section--divided section--divided__reversed section--active"
+      >
         <div class="section--divided__child column--centered">
           <div>
             <h1 class="title title--emphisise">
@@ -66,8 +72,8 @@
               easy with <b class="bold">LaslesVPN.</b>
             </h1>
             <p class="paragraph">
-              Provide a network for all your needs
-              with ease and fun using <b class="bold--low">LaslesVPN</b><br />
+              Provide a network for all your needs with ease and fun using
+              <b class="bold--low">LaslesVPN</b><br />
               discover interesting features from us.
             </p>
             <button class="button button--large button--margin-top">
@@ -246,8 +252,8 @@
           <p class="paragraph no-margin">
             Let's subscribe with us and find the fun.
           </p>
-          </div>
-          <button class="button button--large">Subscribe now</button>
+        </div>
+        <button class="button button--large">Subscribe now</button>
       </section>
     </main>
 
@@ -293,7 +299,9 @@
 
   <script>
     function toggleHamburger() {
-      document.getElementById("hamburger").classList.toggle("hamburger--clipped");
+      document
+        .getElementById("hamburger")
+        .classList.toggle("hamburger--clipped");
       const elements = document.getElementsByClassName("menu__symbol__line");
       for (var i = 0; elements.length > i; i++) {
         elements[i].classList.toggle("menu__symbol__line--open");
@@ -304,20 +312,19 @@
       const windowHeignt = window.innerHeight;
       const elementVisible = 150;
 
-      const sections = document.getElementsByClassName('section');
+      const sections = document.getElementsByClassName("section");
 
-      for(let i = 0; i < sections.length; i++){
+      for (let i = 0; i < sections.length; i++) {
         let sectionPositionTop = sections[i].getBoundingClientRect().top;
 
-        if(windowHeignt - elementVisible > sectionPositionTop) {
-          sections[i].classList.add('section--active');
+        if (windowHeignt - elementVisible > sectionPositionTop) {
+          sections[i].classList.add("section--active");
         } else {
-          sections[i].classList.remove('section--active');
+          sections[i].classList.remove("section--active");
         }
       }
-
     }
 
-    window.addEventListener("scroll",revealAnimation);
+    window.addEventListener("scroll", revealAnimation);
   </script>
 </html>

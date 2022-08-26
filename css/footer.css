@@ -32,7 +32,14 @@
 .footer__social__item__img {
   height: 34px;
   width: 34px;
-  border-radius: 17px;
+  border-radius: 50%;
   background-image: url("../images/media-back.svg");
+  transition: box-shadow 0.5s;
   box-shadow: 0 20px 20px #ccc;
+  cursor: pointer;
+}
+
+
+.footer__social__item__img:hover {
+  box-shadow: 0 0 20px #f53838;
 }

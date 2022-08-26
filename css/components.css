@@ -9,12 +9,19 @@
   width: 150px;
   height: 48px;
   margin: 2px;
+  cursor: pointer;
+  transition: background-color .5s, color 0.4s;
+  border-radius: 24px;
+}
+
+.button:hover {
+  background-color: #f53855;
+  color:#fff;
 }
 
 .button--outlined {
   color:#f53855;
   border: 1px solid #f53855;
-  border-radius: 24px;
 }
 
 .button--large {
@@ -26,6 +33,12 @@
   background-color: #f53838;
   box-shadow: 0 20px 60px -20px #f53838;
 
+}
+
+.button--large:hover{
+  background-color: transparent;
+  color:#f53838;
+  border: 1px solid #f53838;
 }
 
 .button--margin-top {

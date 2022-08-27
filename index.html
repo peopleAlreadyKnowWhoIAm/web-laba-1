@@ -41,7 +41,7 @@
         </button>
       </div>
       <div class="hamburger" id="hamburger">
-        <nav>
+        <nav class="header__nav">
           <ul class="pages">
             <li class="inline-block pages__item"><a href="#">About</a></li>
             <li class="inline-block pages__item"><a href="#">Features</a></li>
@@ -54,7 +54,7 @@
         </nav>
 
         <div class="sign">
-          <button class="inline-block button">Sign In</button>
+          <button class="inline-block button button--transparent">Sign In</button>
           <button class="inline-block button button--outlined">Sign Up</button>
         </div>
       </div>
@@ -299,6 +299,8 @@
 
   <script>
     function toggleHamburger() {
+      document.body.classList.toggle("lock-scroll");
+
       document
         .getElementById("hamburger")
         .classList.toggle("hamburger--clipped");

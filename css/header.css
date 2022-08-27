@@ -14,6 +14,12 @@
   display: none;
 }
 
+.header__nav {
+  flex-grow: 1;
+  box-sizing: border-box;
+  text-align: center;
+}
+
 .menu__symbol__line{
   width: inherit;
   background-color: #4f5665;
@@ -72,6 +78,14 @@
 .pages__item:hover  {
   color: #0b132a;
 }
+.hamburger--clipped {
+  top:0 !important;
+}
+
+.sign {
+  flex-grow: 1;
+  text-align: end;
+}
 
 @media screen and (max-width: 1250px) {
   .header {
@@ -104,11 +118,8 @@
     align-items: stretch;
     background-color: #FFFD;
   }
-}
-.hamburger--clipped {
-  top:0;
-}
 
-.sign {
-  text-align: center;
+  .sign {
+    text-align: center;
+  }
 }

@@ -27,6 +27,10 @@
   height: auto;
 }
 
+.lock-scroll {
+  overflow-y: hidden;
+}
+
 .no-height {
   height: 0;
 }

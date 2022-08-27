@@ -14,7 +14,7 @@
   border-radius: 24px;
 }
 
-.button:hover {
+.button--outlined:hover, .button--transparent:hover {
   background-color: #f53855;
   color:#fff;
 }

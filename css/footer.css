@@ -1,5 +1,5 @@
   .footer {
-    height: 300px;
+    height: 18.75rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -8,7 +8,7 @@
 @media screen and (max-width: 1050px) {
   
   .footer {
-    padding-top: 50px;
+    padding-top: 3rem;
     height: auto;
     flex-direction: column-reverse;
     align-items: center;
@@ -16,7 +16,7 @@
 }
 
 .footer__copyrights {
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   color: #afb5c0;
 }
@@ -26,20 +26,23 @@
 }
 
 .footer__social__item {
-  padding: 20px;
+  padding: 1.5rem;
 }
 
 .footer__social__item__img {
-  height: 34px;
-  width: 34px;
+  height: 2.125rem;
+  width: 2.125rem;
   border-radius: 50%;
   background-image: url("../images/media-back.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
   transition: box-shadow 0.5s;
-  box-shadow: 0 20px 20px #ccc;
+  box-shadow: 0 1.25rem 1.25rem #ccc;
   cursor: pointer;
 }
 
 
 .footer__social__item__img:hover {
-  box-shadow: 0 0 20px #f53838;
+  box-shadow: 0 0 1.25rem #f53838;
 }

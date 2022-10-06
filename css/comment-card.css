@@ -1,0 +1,64 @@
+.card {
+  max-width: 25rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 1vw;
+  flex: 1 1 15.62rem;
+  margin: 2rem 2vw;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.5s;
+}
+
+.card:hover {
+  border-color: #f53855;
+}
+
+.card__comment-box {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.card__header__img {
+  border-radius: 1.5rem;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.card__header__name-and-location {
+  margin-right: 0.6rem;
+}
+
+.card__header__name-and-location__child {
+  margin: 0 0.6rem;
+}
+
+.card__header__name-and-location__location {
+  line-height: normal;
+  font-size: 0.875rem;
+  margin-top: 0.4rem;
+}
+
+.card__header__rate {
+  display: flex;
+  align-items: center;
+}
+
+.card__header__rate__img {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: 0.8rem;
+}
+
+.card__paragraph {
+  color: #0b132a;
+}

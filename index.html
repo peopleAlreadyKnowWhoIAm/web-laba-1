@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LaslesVPN</title>
+
+    <link rel="icon" href="images/logo.ico" />
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400..700"
+    />
+
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__logo-and-button">
+        <div class="logo inline-block">
+          <img
+            class="inline-block logo__image"
+            src="images/logo.svg"
+            alt="logo"
+          />
+          <p class="inline-block logo__title no-margin">
+            Lasles<b class="bold">VPN</b>
+          </p>
+        </div>
+        <button
+          class="button header__button--hamburger"
+          onclick="toggleHamburger()"
+        >
+          <div class="menu__symbol">
+            <span class="menu__symbol__line menu__symbol__line--up"></span>
+            <span class="menu__symbol__line menu__symbol__line--mid"></span>
+            <span class="menu__symbol__line menu__symbol__line--bot"></span>
+          </div>
+        </button>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <nav class="header__nav">
+          <ul class="pages">
+            <li class="inline-block pages__item"><a href="#">About</a></li>
+            <li class="inline-block pages__item"><a href="#">Features</a></li>
+            <li class="inline-block pages__item"><a href="#">Pricing</a></li>
+            <li class="inline-block pages__item">
+              <a href="#">Testimonials</a>
+            </li>
+            <li class="inline-block pages__item"><a href="#">Help</a></li>
+          </ul>
+        </nav>
+
+        <div class="sign">
+          <button class="inline-block button button--transparent">Sign In</button>
+          <button class="inline-block button button--outlined">Sign Up</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Because its up and never could appear from down -->
+      <section
+        class="section section--divided section--divided__reversed section--active"
+      >
+        <div class="section--divided__child column--centered">
+          <div>
+            <h1 class="title title--emphisise">
+              Want anything to be <br />
+              easy with <b class="bold">LaslesVPN.</b>
+            </h1>
+            <p class="paragraph">
+              Provide a network for all your needs with ease and fun using
+              <b class="bold--low">LaslesVPN</b><br />
+              discover interesting features from us.
+            </p>
+            <button class="button button--large button--margin-top">
+              Get started
+            </button>
+          </div>
+        </div>
+        <div class="section--divided__child">
+          <img
+            class="img-in-container"
+            src="images/Illustration1.svg"
+            alt="intrested man"
+          />
+        </div>
+      </section>
+
+      <section class="section section--divided transparent">
+        <div class="section--divided__child">
+          <img
+            class="img-in-container"
+            src="images/Illustration2.svg"
+            alt="saluting man"
+          />
+        </div>
+        <div class="section--divided__child column--centered">
+          <div>
+            <h2 class="title">
+              We Provide Many <br />
+              Features You Can Use
+            </h2>
+            <p class="paragraph">
+              You can explore the features that we provide with fun <br />
+              and have their own functions each feature.
+            </p>
+
+            <ul class="benefit-list">
+              <li class="benefit-list__item">
+                <span class="benefit-list__item__text">
+                  Powerful online protection
+                </span>
+              </li>
+              <li class="benefit-list__item">
+                <span class="benefit-list__item__text">
+                  Internet without borders
+                </span>
+              </li>
+              <li class="benefit-list__item">
+                <span class="benefit-list__item__text"> Supercharged VPN </span>
+              </li>
+              <li class="benefit-list__item">
+                <span class="benefit-list__item__text">
+                  No specific time limits
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section transparent">
+        <h2 class="title center">
+          Trusted by Thousands <br />
+          of Happy Customer
+        </h2>
+        <p class="paragraph center">
+          These are the stories of our customers who have joined us with
+          <br />great pleasure when using this crazy feature.
+        </p>
+        <div class="section__rates">
+          <div class="card">
+            <div class="card__header">
+              <img class="card__header__img" src="images/face1.png" alt="man" />
+              <div class="card__header__name-and-location">
+                <h3
+                  class="card__header__name-and-location__child title title--small"
+                >
+                  Viezh Robert
+                </h3>
+                <p
+                  class="paragraph card__header__name-and-location__child card__header__name-and-location__location"
+                >
+                  Warshaw, Poland
+                </p>
+              </div>
+
+              <div class="card__header__rate">
+                4.5
+                <img
+                  class="card__header__rate__img"
+                  src="images/star.svg"
+                  alt="star"
+                />
+              </div>
+            </div>
+            <div class="card__comment-box">
+              <p class="paragraph card__paragraph">
+                “Wow... I am very happy to use this VPN, it turned out to be
+                more than my expectations and so far there have been no
+                problems.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__header">
+              <img class="card__header__img" src="images/face2.png" alt="man" />
+              <div class="card__header__name-and-location">
+                <h3
+                  class="card__header__name-and-location__child title title--small"
+                >
+                  Yessica Christy
+                </h3>
+                <p
+                  class="paragraph card__header__name-and-location__child card__header__name-and-location__location"
+                >
+                  Warshaw, Poland
+                </p>
+              </div>
+
+              <div class="card__header__rate">
+                4.5
+                <img
+                  class="card__header__rate__img"
+                  src="images/star.svg"
+                  alt="star"
+                />
+              </div>
+            </div>
+            <div class="card__comment-box">
+              <p class="paragraph card__paragraph">
+                “I like it because I like to travel far and still can connect
+                with high speed.”.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__header">
+              <img class="card__header__img" src="images/face3.png" alt="man" />
+              <div class="card__header__name-and-location">
+                <h3
+                  class="card__header__name-and-location__child title title--small"
+                >
+                  Kim Young Jou
+                </h3>
+                <p
+                  class="paragraph card__header__name-and-location__child card__header__name-and-location__location"
+                >
+                  Warshaw, Poland
+                </p>
+              </div>
+
+              <div class="card__header__rate">
+                4.5
+                <img
+                  class="card__header__rate__img"
+                  src="images/star.svg"
+                  alt="star"
+                />
+              </div>
+            </div>
+            <div class="card__comment-box">
+              <p class="paragraph card__paragraph">
+                “This is very unusual for my business that currently requires a
+                virtual private network that has high security.”.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--divided section--subsribe transparent">
+        <div>
+          <h2 class="title no-margin">
+            Subscribe Now for <br />
+            Get Special Features!
+          </h2>
+          <p class="paragraph no-margin">
+            Let's subscribe with us and find the fun.
+          </p>
+        </div>
+        <button class="button button--large">Subscribe now</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__copyrights">@2020Lasles<b class="bold">VPN</b></div>
+      <nav>
+        <ul class="footer__social">
+          <li class="footer__social__item">
+            <img
+              class="footer__social__item__img"
+              src="images/face.svg"
+              alt="facebook"
+            />
+          </li>
+          <li class="footer__social__item">
+            <img
+              class="footer__social__item__img"
+              src="images/inst.svg"
+              alt="instagram"
+            />
+          </li>
+          <li class="footer__social__item">
+            <img
+              class="footer__social__item__img"
+              src="images/twit.svg"
+              alt="twitte"
+            />
+          </li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <img
+          class="inline-block logo__image"
+          src="images/logo.svg"
+          alt="logo"
+        />
+        <p class="inline-block logo__title no-margin">
+          Lasles<b class="bold">VPN</b>
+        </p>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    function toggleHamburger() {
+      document.body.classList.toggle("lock-scroll");
+
+      document
+        .getElementById("hamburger")
+        .classList.toggle("hamburger--clipped");
+      const elements = document.getElementsByClassName("menu__symbol__line");
+      for (var i = 0; elements.length > i; i++) {
+        elements[i].classList.toggle("menu__symbol__line--open");
+      }
+    }
+
+    function revealAnimation() {
+      const windowHeignt = window.innerHeight;
+      const elementVisible = 150;
+
+      const sections = document.getElementsByClassName("section");
+
+      for (let i = 0; i < sections.length; i++) {
+        let sectionPositionTop = sections[i].getBoundingClientRect().top;
+
+        if (windowHeignt - elementVisible > sectionPositionTop) {
+          sections[i].classList.add("section--active");
+        } else {
+          sections[i].classList.remove("section--active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", revealAnimation);
+  </script>
+</html>

@@ -1,0 +1,67 @@
+.button {
+  font-family: inherit;
+  border: none;
+  padding: 0;
+  background-color: #FFF0;
+  font-size: 1rem;
+  color: #0b132a;
+  font-weight: 500;
+  width: 9.375em;
+  height: 4em;
+  margin: 2px;
+  cursor: pointer;
+  transition: background-color .5s, color 0.4s;
+  border-radius: 1.5em;
+}
+
+.button--outlined:hover, .button--transparent:hover {
+  background-color: #f53855;
+  color:#fff;
+}
+
+.button--outlined {
+  color:#f53855;
+  border: 1px solid #f53855;
+}
+
+.button--large {
+  width: 15.625em;
+  height: 3.75em;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 0.8em;
+  background-color: #f53838;
+  box-shadow: 0 0.8em 3.75em -0.8em #f53838;
+
+}
+
+.button--large:hover{
+  background-color: transparent;
+  color:#f53838;
+  border: 1px solid #f53838;
+}
+
+.button--margin-top {
+  margin-top: 3.125em;
+}
+
+
+.logo__image {
+  vertical-align: top;
+  padding: 0.25rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.logo__title {
+  line-height: 3rem;
+  color: #0b132a;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.paragraph {
+  color: #4f5665;
+  font-size: 1rem;
+  line-height: 1.875rem;
+}

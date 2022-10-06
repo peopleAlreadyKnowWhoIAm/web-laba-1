@@ -1,0 +1,63 @@
+.bold {
+  font-weight: 700;
+}
+
+.bold--low {
+  font-weight: 500;
+}
+
+
+.center {
+  padding: 0 10%;
+  text-align: center;
+}
+
+.column--centered {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.img-in-container {
+  width: 100%;
+  height: auto;
+}
+
+.lock-scroll {
+  overflow-y: hidden;
+}
+
+.no-height {
+  height: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+.title {
+  color: #0b132a;
+  display: block;
+  font-weight: 500;
+  font-size: 2.125rem;
+}
+
+.title--small {
+  font-size: 1.25rem;
+}
+
+.title--large {
+  font-size: 3.125rem;
+}

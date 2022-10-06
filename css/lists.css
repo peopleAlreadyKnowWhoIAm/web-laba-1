@@ -1,0 +1,25 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.benefit-list {
+  padding: 0;
+  margin: 1.5rem;
+  list-style-image: url("../images/list-decoration.svg");
+}
+
+.benefit-list__item {
+  margin-bottom: 1.25rem;
+  height: 1.25rem;
+  font-size: 0.875rem;
+  padding: 0.1875rem;
+  color: #4f5665;
+}
+
+.benefit-list__item__text {
+  display: inline-block;
+  line-height: 1.25rem;
+  margin-left: 0.5rem;
+  vertical-align: top;
+}

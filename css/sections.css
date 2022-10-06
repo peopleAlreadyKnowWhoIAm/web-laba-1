@@ -1,0 +1,58 @@
+@import url(animation.css);
+
+.section {
+  padding: 5vw 0;
+}
+
+.section--divided {
+  display: flex;
+  align-items: center;
+}
+
+.section--divided__child {
+  flex: 1 1 50%;
+}
+.section__rates {
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1050px) {
+  .section--divided {
+    flex-direction: column;
+  }
+
+  .section--divided__child {
+    flex-basis: content;
+  }
+
+  .section--divided__reversed {
+    flex-direction: column-reverse;
+  }
+  .section__rates {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.section--subsribe {
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 3.125rem;
+  box-shadow: 0 3.125rem 1.25rem -0.625rem #e9e9e955;
+}
+
+@media screen and (max-width: 1050px) {
+  .section--subsribe {
+    align-items: center;
+  }
+}
+
+.section--active{
+  animation: fade-from-bottom 1s ease-in;
+  opacity: 1;
+}
+

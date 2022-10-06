@@ -1,0 +1,38 @@
+@import url("utils.css");
+@import url("comment-card.css");
+@import url("components.css");
+@import url("footer.css");
+@import url("header.css");
+@import url("lists.css");
+@import url("sections.css");
+
+html {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 2000px) {
+    html {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    html {
+        font-size: 32px;
+    }
+}
+
+body {
+  font-family: Rubik, Arial, sans-serif;
+}
+
+@media screen and (min-width: 1050px) {
+  main {
+    margin: 0 10%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
